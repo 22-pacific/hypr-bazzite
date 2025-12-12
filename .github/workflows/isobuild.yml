@@ -56,7 +56,7 @@ jobs:
           ENROLLMENT_PASSWORD: ${{ matrix.ENROLLMENT_PASSWORD }}
 
       - name: Upload ISO as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: base-main-${{ matrix.version }}${{ matrix.SECURE_BOOT_STRING }}.iso
           path: |
